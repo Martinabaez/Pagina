@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"); 
+
+:root {
+    /* bg colors */
+
+    --background: #723d26; 
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white-: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+    /* text color */
+    --text-gray: #adb9c7;
+    --text-white:#F8F8FF;
+     /* decoration */
+     --fire: #ff6d00;
+     --electric: #64d3ff;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+header{
+    background: #723d26;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+}
+
+.navbar,
+.navbar--list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 35px;
+}
+
+
+.navbar--list a{
+    color: var(--bg-white-);
+    font-size: 16px;
+}
+
+.navbar--list li:hover > a{
+color: #000000;
+font-weight: 600;
+transition: all .3s;
+}
+
+main{
+    background-image: url(./img/pexels-toni-cuenca-585750.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #723d26;
+    width: 100;
+}
+ /* section */
+#hero {
+    margin-top: 100px;
+    padding:90px;
+    max-width: 1200px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+
+}
+
+.hero-info{
+display: flex;
+flex-direction: column;
+gap: 20;
+width: 50%;
+}
+
+.hero-info h1{
+ font-size: 50px;
+ width:80%;
+ min-width: 450px;
+ font-weight: 900;
+ color:#33190f;
+}
+
+.hero-info p{
+    font-size: 20px;
+    width: 70%;
+    color: #ffffff;
+}
+
+.hero-info p>span{
+  font-weight: 800;
+}
+
+.hero-info a{
+    color: rgb(255, 255, 255);
+    background-color: #723d26;
+    width: 120px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+/* info cards */
+#info{
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:80px;
+
+}
+#info h2{
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.info-cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card{
+width: 320px;
+height:320px;
+padding: 40px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: rgb(110, 64, 35);
+border-radius: 10px;
+gap: 20px;
+}
+
+.info-card img{
+width: 60px;
+}
+.info-card h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #F8F8FF;
+
+}
+.info-card p{
+    font-size: 14px;
+    font-weight: 300;
+    color: #F8F8FF;
+}
+
+/* contact */
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    margin: 20px auto;
+    background: #8540246b;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0, .5)
+    
+}
+
+.contenedor h4{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    border-radius: ;
+
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.contenido .info,
+.contenido .formulario {
+    width: 50%;
+
+}
+
+/* estilos info */
+.info {
+    padding-left: 10px;
+}
+
+.info .col{
+width: 100%;
+display: flex;
+margin-bottom: 15px;
+font-size: 16px;
+align-items: center;
+flex-wrap: nowrap;
+}
+
+.info .col .icono{
+    color: #ffffff;
+    margin-right: 10px;
+}
+.info .col p{
+    color:#ffffff;
+   font-weight: 600;
+}
+
+.info .redes-s{
+    width: 100%;
+    overflow: hidden;
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info .redes-s a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: #F8F8FF;
+    background: #723d26 ;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px rgb(0, 0, 0, .4);
+}
+
+.info .redes-s a:hover{
+    box-shadow: 0px 3px 8px rgba(0, 0, 0 .4);
+}
+
+/* Estilos formulario */
+.formulario{
+    padding-left: 10px;
+
+}
+
+
+.formulario input,
+.formulario textarea{
+width: 100%;
+margin-bottom: 15px;
+padding: 12px 20px;
+border: 1px solid #723d26;
+color: var(--background);
+font-family: "Open Sans", sans-serif;
+font-weight: 200;
+outline: 0;
+
+}
+
+.formulario textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.formulario button {
+    background: #723d26;
+    color: #ffffff;
+    width: 120px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    float: right;
+}
+/* footer */
+footer{
+background: var(--background);
+color: #F8F8FF;
+display: flex;
+justify-content: column;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+padding: 30px;
+
+}
+
+footer a,
+footer p{
+    color: var(--text-white);
+    font-weight: 300;
+    font-size: 14px;
+    background: #723d26;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width:1200px) {
+ #hero{
+ padding: 0;
+ }
+}
+
+@media (max-width:992px){
+    .hero-info{
+        width: 40%;
+        padding: 15px;
+    }
+    .info-card{
+        width: 300px;
+        height: 300px;
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width:768px){
+    .navbar,
+.navbar--list{
+    padding: 15px;
+}
+    .hero-info{
+        width: 60%;
+        padding:10px;
+    }
+    .hero-info h1{
+        font-size: 32px;
+    }
+    .hero-info p,
+    .hero-info p>span {
+    font-size:16px ;
+    }
+    #info h2{
+     font-size: 25px;
+    }
+
+    .info-card{
+    
+    }
+    .info-card h3{
+     font-size: 15px;
+    }
+}
+
+@media (max-width:576px){
+    header{
+        height: 60px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .navbar--list a{
+        font-size: 11px;
+    }
+    .hero-info h1{
+        font-size: 24px;
+    }
+    .hero-info p{
+        font-size: 15px;
+    }
+    .hero-info a{
+        width:70px ;
+        padding: 10px;
+        font-size: 12px;
+    }
+    #info h2{
+            font-size: 22px;
+           }
+   .info-card{
+   width: 50%;
+   height:50%;
+}
+   
+  .info-card h3{
+   font-size: 15px;
+  }
+  .info-card p{
+    font-size: 12px;
+  }
+
+  .contenedor{
+        width:80%;
+        height: 40%;
+}
+    
+  .contenedor h4{
+    font-size: 18px;
+  }
+   .col p{
+    font-size:10px ;
+   }
+  
+   .formulario input,
+   .formulario textarea{
+   width: 70%;
+   margin-bottom: 17px;
+   padding: 6px 12px;
+}
+
+.formulario button {
+    width: 90px;
+    padding: 8px;
+    font-size: 10px;
+    
+}
+footer{
+    gap: 20px;
+    padding: 20px;
+    
+    }
+    
+    footer a,
+    footer p{
+        font-weight: 300;
+        font-size: 12px;
+        }
+    
+}
